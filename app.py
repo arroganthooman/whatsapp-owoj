@@ -24,7 +24,7 @@ def reply():
 
         for person in Person.listPengaji:
             if int(putaran) > 30:
-                person.tambahJuz(int(putaran)%30)
+                person.tambahJuz(int(putaran)%30 - 1)
             else:
                 person.tambahJuz(int(putaran)-1)
         

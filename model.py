@@ -8,7 +8,10 @@ class Person():
         self.listPengaji.append(self)
 
     def tambahJuz(self, jumlah):
-        self.juz += jumlah
+        if self.juz + jumlah > 30:
+            self.juz = (self.juz + jumlah) % 30
+        else:
+            self.juz += jumlah
 
 
     def __repr__(self):
