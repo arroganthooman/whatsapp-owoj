@@ -23,7 +23,10 @@ def reply():
         Person.aktifkan()
 
         for person in Person.listPengaji:
-            person.tambahJuz(int(putaran)%30 - 1)
+            if putaran > 30:
+                person.tambahJuz(int(putaran)%30)
+            else:
+                person.tambahJuz(int(putaran)-1)
         
         Person.listPengaji.sort(key=lambda x:x.juz)
 
