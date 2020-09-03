@@ -23,7 +23,7 @@ def reply():
         Person.aktifkan()
 
         for person in Person.listPengaji:
-            if putaran > 30:
+            if int(putaran) > 30:
                 person.tambahJuz(int(putaran)%30)
             else:
                 person.tambahJuz(int(putaran)-1)
