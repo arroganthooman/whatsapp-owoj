@@ -14,7 +14,8 @@ def reply():
     putaran = request.form.get('Body')
     
     if putaran.isdigit():
-        msg = '📖LIST REKAP OWOJ📖\n'
+        msg = "بـــــــسم اللّـــــــه الرّحمن الرّحيـــــــم"
+        msg += '\n📖LIST REKAP OWOJ📖\n'
         msg += "🕘Jam Lapor: 18.00-21.00\n\n"
         msg += f'Putaran ke-{putaran}\n'
 
@@ -36,7 +37,7 @@ def reply():
         resp.message(msg)
 
         return str(resp)
-        
+
     else:
         resp= MessagingResponse()
         resp.message("Masukkan putaran!")
