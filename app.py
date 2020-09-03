@@ -15,7 +15,7 @@ def reply():
     
     if putaran.isdigit():
         msg = "بـــــــسم اللّـــــــه الرّحمن الرّحيـــــــم"
-        msg += '\n📖LIST REKAP OWOJ📖\n'
+        msg += '\n\n📖LIST REKAP OWOJ📖\n'
         msg += "🕘Jam Lapor: 18.00-21.00\n\n"
         msg += f'Putaran ke-{putaran}\n'
 
