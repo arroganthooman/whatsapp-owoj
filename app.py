@@ -18,7 +18,7 @@ def reply():
         msg += "\n"
         msg += '📖LIST REKAP OWOJ📖\n'
         msg += "🕘Jam Lapor: 18.00-21.00\n\n"
-        msg += "Gelombang ke-2"
+        msg += "Gelombang ke-2\n"
         msg += f'Putaran ke-{putaran}\n'
 
         Person.aktifkan()
