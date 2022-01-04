@@ -18,8 +18,9 @@ def reply():
         msg += "\n"
         msg += '📖LIST REKAP OWOJ📖\n'
         msg += "🕘Jam Lapor: 18.00-21.00\n\n"
-        msg += "Gelombang ke-2\n"
+        msg += "Gelombang ke-3\n"
         msg += f'Putaran ke-{putaran}\n\n'
+        msg += "Mulai Januari 2022"
 
         Person.aktifkan()
 
@@ -44,7 +45,7 @@ def reply():
         return str(resp)
 
     else:
-        resp= MessagingResponse()
+        resp = MessagingResponse()
         resp.message("Masukkan putaran!")
         return str(resp)
 
