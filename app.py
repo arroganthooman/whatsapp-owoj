@@ -19,8 +19,8 @@ def reply():
         msg += '📖LIST REKAP OWOJ📖\n'
         msg += "🕘Jam Lapor: 18.00-21.00\n\n"
         msg += "Gelombang ke-3\n"
-        msg += f'Putaran ke-{putaran}\n\n'
-        msg += "Mulai Januari 2022\n"
+        msg += f'Putaran ke-{putaran}\n'
+        msg += "Mulai Januari 2022\n\n"
 
         Person.aktifkan()
 
